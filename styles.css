@@ -1,13 +1,100 @@
-/* Custom hover effects for buttons */
+/* General styles */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* NavBar styles */
+.navbar {
+    font-family: 'Montserrat', sans-serif;
+    background-color: white;
+}
+
+/* Hero section styles */
+.hero-section {
+    position: relative;
+    background: url('Store.avif') no-repeat center center;
+    background-size: cover;
+    color: rgb(45, 47, 163);
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-section .hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: white; /* Change the text color to white for better readability */
+}
+
+/* Card styles */
+.card {
+    border: none;
+    transition: transform 0.2s;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Button hover effects */
 .btn-primary:hover {
     background-color: #0056b3;
     border-color: #004085;
 }
 .btn-secondary:hover {
     background-color: #545b62;
-    border-color: #4e555b;
+    border-color: #3a4047;
 }
 .btn-success:hover {
     background-color: #218838;
     border-color: #1e7e34;
+}
+
+/* Map responsive styling */
+.map-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+.map-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+/* Call to Action section styles */
+.cta-section {
+    background: #333;
+    color: white;
+}
+
+/* Footer styles */
+footer {
+    background-color: #004085;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Line breaks between sections */
+hr {
+    margin: 50px 0;
 }

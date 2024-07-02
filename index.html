@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tech Solutions</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +16,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
+            <ul class="navbar-nav ml-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -32,35 +33,48 @@
         </div>
     </nav>
 
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="overlay"></div>
+        <div class="hero-content">
+            <h1 class="display-4">Welcome to Tech Solutions</h1>
+            <p class="lead">Your one-stop shop for the latest Apple products</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">Get Started</a>
+        </div>
+    </div>
+
+    <hr>
+
     <!-- Services Section with Bootstrap Cards -->
     <div class="container mt-5">
+        <h2 class="text-center text-primary">Our Services</h2>
         <div class="row">
             <div class="col-md-4">
                 <div class="card">
-                    <img src="service1.jpg" class="card-img-top" alt="Service 1">
+                    <img src="iphone.avif" class="card-img-top" alt="Smartphone">
                     <div class="card-body">
-                        <h5 class="card-title">Service 1</h5>
-                        <p class="card-text">Description of Service 1.</p>
+                        <h5 class="card-title text-primary">Smartphone</h5>
+                        <p class="card-text">Experience the latest iPhone with cutting-edge technology and sleek design. Available for $999.</p>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="service2.jpg" class="card-img-top" alt="Service 2">
+                    <img src="ipad.avif" class="card-img-top" alt="Tablet">
                     <div class="card-body">
-                        <h5 class="card-title">Service 2</h5>
-                        <p class="card-text">Description of Service 2.</p>
+                        <h5 class="card-title text-primary">Tablet</h5>
+                        <p class="card-text">Discover the power of the new iPad Pro, perfect for work and play. Starting at $799.</p>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="card">
-                    <img src="service3.jpg" class="card-img-top" alt="Service 3">
+                    <img src="mac.avif" class="card-img-top" alt="Laptop">
                     <div class="card-body">
-                        <h5 class="card-title">Service 3</h5>
-                        <p class="card-text">Description of Service 3.</p>
+                        <h5 class="card-title text-primary">Laptop</h5>
+                        <p class="card-text">Upgrade to the latest MacBook Pro for unparalleled performance and portability. Prices begin at $1,299.</p>
                         <a href="#" class="btn btn-primary">Learn More</a>
                     </div>
                 </div>
@@ -68,15 +82,75 @@
         </div>
     </div>
 
-    <!-- Interactive Buttons -->
+    <hr>
+
+    <!-- Customer Testimonials Section -->
     <div class="container mt-5">
-        <button type="button" class="btn btn-primary">Click Me</button>
-        <button type="button" class="btn btn-secondary">Learn More</button>
-        <button type="button" class="btn btn-success">Contact Us</button>
+        <h2 class="text-center text-primary">Customer Testimonials</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"The new iPhone is amazing! The performance and design are top-notch."</p>
+                        <h5 class="card-title text-primary">- John Doe</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"iPad Pro has revolutionized my work process. It's a powerful device."</p>
+                        <h5 class="card-title text-primary">- Jane Smith</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <p class="card-text">"The MacBook Pro is perfect for my needs. Highly recommend it!"</p>
+                        <h5 class="card-title text-primary">- Alice Johnson</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <hr>
+
+    <!-- Interactive Map -->
+    <div class="container mt-5">
+        <h2 class="text-center text-primary">Our Locations</h2>
+        <div class="map-responsive">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126915.51001416211!2d-122.4194155!3d37.7749295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b6f8a5b3%3A0xa7b7b0f4f3ebc!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1592944122310!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Call to Action Section -->
+    <div class="cta-section bg-dark text-white text-center py-5">
+        <div class="container">
+            <h2 class="display-4">Ready to experience the best in tech?</h2>
+            <p class="lead">Contact us today to get started on your journey with the latest Apple products.</p>
+            <a href="#" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Tech Solutions. All Rights Reserved.</p>
+            <p>Follow us on:
+                <a href="#" class="text-white ml-2"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="text-white ml-2"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-white ml-2"><i class="fab fa-instagram"></i></a>
+            </p>
+        </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </body>
 </html>
